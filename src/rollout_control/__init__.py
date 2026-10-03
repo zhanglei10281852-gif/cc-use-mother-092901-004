@@ -1,1 +1,51 @@
 """车端软件灰度发布领域包。"""
+
+from .contracts import (
+    CommandKind,
+    CommandStatus,
+    Compatibility,
+    HealthReport,
+    IncidentReport,
+    InstallReceipt,
+    PlanState,
+    ReceiptDisposition,
+    RiskPolicy,
+    RolloutState,
+    RolloutWave,
+    Severity,
+    SoftwarePackage,
+    VehicleSnapshot,
+    VehicleStatus,
+    Verdict,
+)
+from .service import (
+    ConflictError,
+    NotFoundError,
+    RolloutControlService,
+    ServiceError,
+    ValidationError,
+)
+
+__all__ = [
+    "CommandKind",
+    "CommandStatus",
+    "Compatibility",
+    "ConflictError",
+    "HealthReport",
+    "IncidentReport",
+    "InstallReceipt",
+    "NotFoundError",
+    "PlanState",
+    "ReceiptDisposition",
+    "RiskPolicy",
+    "RolloutControlService",
+    "RolloutState",
+    "RolloutWave",
+    "ServiceError",
+    "Severity",
+    "SoftwarePackage",
+    "ValidationError",
+    "VehicleSnapshot",
+    "VehicleStatus",
+    "Verdict",
+]
